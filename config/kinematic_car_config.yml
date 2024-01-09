@@ -1,0 +1,19 @@
+# run_sim_count: num of simulations for test runs
+# train_sim_count: total num of simulations for model training
+# sim_count_per_train: num of simulations per training iteration
+# traj_per_cluster: percent of trajectories selected from each cluster
+# steps: num of time steps per simulation
+# sd: standard deviation for cps coverage score
+
+kinematic_car:
+  dt: 0.1
+  sd: [5, 5]
+  steps: 100
+  cluster_count: 10
+  run_sim_count: 100
+  train_sim_count: 100
+  traj_per_cluster: 0.5
+  sim_count_per_train: 50
+  inputs_lower_bound: [-9.8, -0.4]
+  inputs_upper_bound: [9.8, 0.4]
+  init_state: [0.0, 0.0, 15.0, 0.0]
