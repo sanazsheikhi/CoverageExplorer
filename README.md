@@ -60,6 +60,15 @@ and test cases in the form of pickle files run the following command:
 ls /directory-to-CoverageExplorer-root-folder/utility/results
 ````
 
+To plot the state trajectories as output of executing the system with generated test
+cases and compute state space coverage run the following commands:
+
+```
+cd /directory-to-CoverageExplorer-root-folder/coverage
+
+python3.8 coverage system_name /directory-to-CoverageExplorer-root-folder/utility/results/system_name_trajectories.pkl
+```
+
 # Usage Example:
 
 To generate test case, run the followinf commands:
@@ -79,7 +88,7 @@ commands:
 ```
 cd /directory-to-CoverageExplorer-root-folder/coverage
 
-python3.8 coverage system_name /directory-to-CoverageExplorer-root-folder/utility/results/system_name_trajectories.pkl
+python3.8 coverage kinematic_car /directory-to-CoverageExplorer-root-folder/utility/results/kinematic_car_trajectories.pkl
 ```
 
 # Benchmarks:
